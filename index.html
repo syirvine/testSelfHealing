@@ -14,69 +14,75 @@
 
 
 <body>
-  <main>
+
+  <div>
+    <h1 id=heading-text>Initial login page</h1>
+  </div>
+
+  <div class="changes">
+    <div class="changeText">
+      <div>
+        <p style="padding: 20px 20px 20px 20px;">The following changes have been made:</p>
+      </div>
+      <div>
+        <ul>
+          <li>Main tag removed in DOM which wrapped the top of the page to the footer</li>
+          <li>Login button renamed to Sign In and ID changed to signInButton</li>
+          <li>Contact Us link now links to google.co.uk</li>
+          <li>Shopping link text changed to Amazon</li>
+          <li>Change password link has been moved out of the fieldset grouping login form</li>
+          <li>The 'Remain signed in' check box has been moved above the input fields and the text has changed</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="login">
+
+    <fieldset>
+      <legend>
+        <h2>Please enter you username and password</h2>
+      </legend>
+
+      <div class="check" style="padding: 20px 20px 20px 0;">
+        <input id="remainCheckbox" type="checkbox" name="remain">
+        <label for="remainCheckbox">Stay signed in</label>
+      </div>
+
+      <div class="input-box">
+        <label for="userName">User Name</label>
+        <br>
+        <input id="userName" type="text" name="Username">
+      </div>
+
+      <div class="input-box">
+        <label for="password">Password</label>
+        <br>
+        <input id="password" type="text" name="Password">
+      </div>
+
+      <div style="padding: 20px 20px 20px 0;">
+        <a href="index.html">
+          <button id="signInButton" type="submit" name="loginButton">Sign In</button>
+        </a>
+      </div>
+
+    </fieldset>
 
     <div>
-      <h1 id=heading-text>Initial login page</h1>
+      <a class="bodyLink" href="#">Click here if you have forgotten your password</a>
     </div>
 
-    <div>
-      <p>The login page is to be used for scripting test cases. Once the test
-        scripts are written and the original selectors have been recorded, the
-        page will be updated to the Test self healing page. On the this page,
-        the IDs, DOM position, class names etc. will have been changed to test self
-        healing functionality. Run the tests again once page has been updated to
-        test self healing.<br>Clicking on the Login/Sign In buttons on each page
-        will flick between the two pages for comparisons.</p>
-    </div>
 
-    <div class="login">
-
-      <fieldset>
-        <legend>
-          <h2>Please enter you username and password</h2>
-        </legend>
-
-        <div class="input-box">
-          <label for="userName">User Name</label>
-          <br>
-          <input id="userName" type="text" name="Username">
-        </div>
-
-        <div class="input-box">
-          <label for="password">Password</label>
-          <br>
-          <input id="password" type="text" name="Password">
-        </div>
-
-        <div class="checkbox" style="padding: 20px 20px 20px 0;">
-          <input id="remainCheckbox" type="checkbox" name="remain">
-          <label for="remainCheckbox">Remain signed in</label>
-        </div>
-
-        <div style="padding: 20px 20px 20px 0;">
-          <a href="testPage.html">
-            <button id="button" type="submit" name="loginButton">Login</button>
-          </a>
-        </div>
-
-        <div>
-          <a class="bodyLink" href="#">Click here if you have forgotten your password</a>
-        </div>
-
-      </fieldset>
-
-
-
-    </div>
-  </main>
+  </div>
 
 
   <footer>
     <div class="footer">
-      <a class="footerLink" href="#">Contact us</a>
+      <a class="footerLink" href="http://www.google.co.uk">Contact us</a>
       <a class="footerLink" href="http://www.google.com">Search</a>
-      <a class="footerLink" href="http://www.amazon.com">Shop</a>
+      <a class="footerLink" href="http://www.amazon.com">Amazon</a>
     </div>
   </footer>
 
