@@ -8,33 +8,33 @@ body{
 }
 
 main {
-  padding-bottom: 3em;
-  font-size: 1em;
+  padding-bottom: 3rem;
+  font-size: 1rem;
 }
 
 h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 label {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 p {
   display: inline-block;
   padding: 75px;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 footer{
   background-color: #30475E;
-  height: 8em;
+  height: 8rem;
   text-align: center;
 }
 
@@ -49,11 +49,17 @@ button {
   font-family: 'Titillium Web', sans-serif;
   font-weight: bold;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .login {
   text-align: center;
+}
+
+.bodyLink {
+  display: inline-block;
+  text-align: left;
+  padding: 20px 20px 20px 0;
 }
 
 .footerLink {
@@ -64,6 +70,17 @@ button {
 .input-box {
   padding: 20px 20px 20px 0;
 }
+
 .footer {
-  padding-top: 2em;
+  padding-top: 2rem;
+}
+
+.changes {
+  text-align: center;
+}
+
+.changeText {
+  display: inline-block;
+  text-align: left;
+  border: 0;
 }

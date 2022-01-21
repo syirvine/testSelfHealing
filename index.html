@@ -4,7 +4,7 @@
 
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Self Healing Test Site</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +21,12 @@
     </div>
 
     <div>
-      <p>This is the inital page to set up your testing and let the program track original selectors. Pressing the 'Login'
-        button will move the page components around and change ID's, styles, position in the DOM etc. to allow a user to
-        test self healing capabilities of a tool.</p>
+      <p>The Initial login page is to be used for scripting test cases. Once the test
+        scripts are written and the original selectors have been recorded, append '/testPage.html'
+        to the first step in the test script. On the Test page, the IDs, DOM position, class names
+        etc. will have been changed to test self healing functionality. Run the tests again using
+        this new URL to test self healing.<br>Clicking on the Login/Sign
+        In buttons on each page will flick between the two pages.</p>
     </div>
 
     <div class="login">
@@ -54,11 +57,15 @@
           <a href="testPage.html">
             <button id="button" type="submit" name="loginButton">Login</button>
           </a>
+        </div>
 
-
+        <div>
+          <a class="bodyLink" href="#">Click here if you have forgotten your password</a>
         </div>
 
       </fieldset>
+
+
 
     </div>
   </main>
